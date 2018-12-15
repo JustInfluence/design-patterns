@@ -27,7 +27,7 @@ public class WeatherData implements Subject {
     }
   }
 
-  public void measrementsChanged() {
+  public void measurementsChanged() {
     notifyObservers();
   }
 
@@ -35,6 +35,6 @@ public class WeatherData implements Subject {
     this.temp = temp;
     this.humidity = humidity;
     this.pressure = pressure;
-    measrementsChanged();
+    measurementsChanged();
   }
 }
